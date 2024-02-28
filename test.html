@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin: 20px auto;
+        }
+
+        th,
+        td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body onload="renderData()">
+    <!-- <h1>Dynamic Table Example</h1>
+    <button onclick="addRow()">Add Row</button> -->
+    <table id="myTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>QTY</th>
+                <th>Sales</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Rows will be added here -->
+        </tbody>
+    </table>
+
+    <!-- <script>
+        const allData = [
+            [
+                ["Nutro Products, Inc. 22lb NUT LID AD LAMB & SW POT", 2, "$0"]
+            ],
+            [
+                ["Nutro Products, Inc. 22lb NUT LID AD LAMB & SW POT", 2, "$0"]
+            ],
+            [
+                ["Nutro Products, Inc. 22lb NUT LID AD LAMB & SW POT", 2, "$188.76"]
+            ],
+            [
+                ["Nutro Products, Inc. 22lb NUT LID AD LAMB & SW POT", 2, "$0"]
+            ]
+        ];
+
+        function addRow(rowData, table) {
+            const newRow = table.insertRow(-1); // Insert a row at the end of the table
+
+            const nameCell = newRow.insertCell(0);
+            const ageCell = newRow.insertCell(1);
+            const countryCell = newRow.insertCell(2);
+
+            nameCell.innerHTML = rowData[0];
+            ageCell.innerHTML = rowData[1];
+            countryCell.innerHTML = rowData[2];
+        }
+
+        function renderData() {
+            const table = document.getElementById("myTable");
+            allData.forEach(item => {
+                addRow(item[0], table);
+            });
+        }
+
+    </script> -->
+</body>
+
+</html>
